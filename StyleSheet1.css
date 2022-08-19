@@ -1,0 +1,178 @@
+﻿/*ヘッダー*/
+header {
+    width: 100%; /*ヘッダーの幅*/
+    height: 200px; /*ヘッダーの高さ*/
+    padding: 5px 0; /*余白の一括指定*/
+    text-align: center; /*水平方向*/
+    color: #fc3f3f; /*文字色*/
+    /*縁取り*/
+    text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0-1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF; /*テキストの影*/
+    /*背景画像*/
+    background-image: url("./assets/img/food.jpg"); /*画像*/
+    background-position: 50% 25%; /*位置*/
+    background-size: cover; /*サイズ*/
+}
+
+/*タイトル*/
+.headline {
+    line-height: 50px; /*行の高さ*/
+    font-size: 100px; /*フォントサイズ*/
+    text-align: center; /*水平方向*/
+    /*下線*/
+    text-decoration: underline;
+}
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/; /*フォントの種類*/
+    font-size: 2.25rem; /*フォントサイズ*/
+}
+
+.blog-header-logo:hover {
+    text-decoration: none; /*文字列の装飾*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/; /*フォントの種類*/
+}
+
+.center {
+    text-align: center; /*水平方向*/
+}
+
+.display-4 {
+    font-size: 2.5rem; /*フォントサイズ*/
+}
+
+/*お題*/
+.l_toc ol {
+    background-color: #F49BA6; /*背景色*/
+    padding: 20px; /*余白の一括指定*/
+    margin: 50px 300px 20px; /*余白( ↑ → ↓ ←)*/
+    list-style: none; /*リストの点*/
+    color: white; /*文字色*/
+    text-align: center; /*水平方向*/
+    font-size: 22px; /*フォントサイズ*/
+    box-shadow: 0px 0px 0px 10px #F49BA6; /*フレーム影*/
+    border: dashed 2px #ff0523; /*枠線*/
+    border-radius: 8px; /*境界線*/
+}
+
+/*Bootstrapの表示用ヘッダー*/
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+/*メイン部分*/
+.body {
+    background-color: #fff5d4; /*背景色*/
+}
+
+/*コンテナ*/
+.container {
+    padding: 30px; /*余白の一括指定*/
+}
+
+/*ページ割り*/
+.blog-pagination {
+    margin-bottom: 4rem; /*↓余白*/
+}
+
+.blog-pagination > .btn {
+    border-radius: 2rem; /*枠線の角*/
+}
+
+/*Blog posts*/
+.blog-post {
+    margin-bottom: 4rem; /*↓余白*/
+}
+
+/*見出し*/
+.blog-post-title {
+  padding: 10px; /*余白の一括指定*/
+    width: 1100px; /*幅*/
+    text-align: center; /*水平方向*/
+    /*中央寄せ*/
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8rem; /*フォントサイズ*/
+    background-color: #ED5466; /*背景色*/
+    color: #ffffff; /*文字色*/
+}
+
+.blog-post-meta {
+    text-align: right; /*水平方向*/
+    margin-bottom: 1.25rem; /*↓余白*/
+    color: #727272; /*文字色*/
+}
+
+/*ボックス*/
+.box {
+    padding: 0.5em 1em; /*余白の一括指定*/
+    width: 1200px; /*幅*/
+    /*中央寄せ*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; /*↑余白*/
+    border: double 5px #ff0523; /*線*/
+    background-color: #F3939E; /*背景色*/
+}
+
+.box p {
+    margin: 0; /*余白( ↑ → ↓ ←)*/
+    padding: 0; /*余白の一括指定*/
+}
+
+/*本文*/
+p {
+    text-align: center; /*水平方向*/
+    font-size: 18px; /*フォントサイズ*/
+    color: white; /*文字色*/
+}
+
+/*作成者名*/
+.name {
+    margin-bottom: 1px; /*↓余白*/
+    font-size: 20px; /*フォントサイズ*/
+    text-align: right; /*水平方向*/
+    color: #fc3f3f; /*文字色*/
+    /*縁取り*/
+    text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0-1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF; /*テキストの影*/
+}
+
+/*フッター*/
+.footer {
+    width: 100%; /*幅*/
+    height: 30px; /*高さ*/
+    padding: 50px 0; /*余白の一括指定*/
+    color: #727272; /*文字色*/
+    text-align: center; /*水平方向*/
+    background-color: #F7B5BD; /*背景色*/
+}
+
+/*↓スクロール↓*/
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+}
+/*↑スクロール↑*/
